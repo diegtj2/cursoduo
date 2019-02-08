@@ -20,7 +20,6 @@ function somar($a,$b){
  	}else{
  		$nota = "nenhuma das anteriores";
  	}
-
  	return $nota;
 
  }
@@ -52,13 +51,12 @@ function definirPrimo($numero){
  }
 
 
-function definirX($linha,$coluna){
+	function definirX($linha,$coluna){
 
-	if($linha == $coluna){
-		echo 'x';
-	}else{
-		echo 0;
+		if($linha == $coluna){
+			echo 'x';
+		}else{
+			echo 'o';
+		}
 	}
-	
-}
 ?>

@@ -12,12 +12,6 @@ $valorDoFormulario = @$_POST['media'];
 //numerosPrimos(0,50);
 
 
-
-
-
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -36,10 +30,7 @@ $valorDoFormulario = @$_POST['media'];
 </form>
 <?php echo media($valorDoFormulario);?>
 
-
-
-
-
+<br>
 
 <!-- exercicio proxima aula
 1234567891011
@@ -56,20 +47,17 @@ ooxoooooxoo    9
 oxoooooooxo    10
 xooooooooox    11
 
-
-
-
 -->
 
-<br />
+<br/>
 
 <?php
 
 
 for ($j=0; $j <= 10 ; $j++) { //laco da linha
-	
+
 	for ($i=0; $i <= 10; $i++) { //laco da coluna
-		definirX($j,$i);
+		definirX(10 - $j,$i);
 	}
 	echo "<br>";
 }
