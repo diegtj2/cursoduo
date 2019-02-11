@@ -55,8 +55,13 @@ function definirPrimo($numero){
 
 		if($linha == $coluna){
 			echo 'x';
-		}else{
+		}
+		else if($linha == 10 - $coluna){
+			echo 'x';
+		}
+		else{
 			echo 'o';
 		}
+
 	}
 ?>

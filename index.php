@@ -33,7 +33,7 @@ $valorDoFormulario = @$_POST['media'];
 <br>
 
 <!-- exercicio proxima aula
-1234567891011
+1234567891011  J
 
 xooooooooox    1
 oxoooooooxo    2
@@ -46,7 +46,7 @@ oooxoooxooo    8
 ooxoooooxoo    9
 oxoooooooxo    10
 xooooooooox    11
-
+               I
 -->
 
 <br/>
@@ -57,7 +57,9 @@ xooooooooox    11
 for ($j=0; $j <= 10 ; $j++) { //laco da linha
 
 	for ($i=0; $i <= 10; $i++) { //laco da coluna
-		definirX(10 - $j,$i);
+
+		definirX($j,$i);
+;
 	}
 	echo "<br>";
 }
