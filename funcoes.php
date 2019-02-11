@@ -49,7 +49,7 @@ function definirPrimo($numero){
  	}
 
  }
- //funcao do desenho de X.
+ //funcao do desenho de X
 	function definirX($linha,$coluna){
 
 		if($linha == $coluna){
@@ -59,7 +59,7 @@ function definirPrimo($numero){
 			echo 'x';
 		}
 		else{
-			echo 'o';
+			echo '<span style="color:#808080">o</span>';
 		}
 
 	}
