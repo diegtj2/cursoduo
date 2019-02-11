@@ -49,8 +49,7 @@ function definirPrimo($numero){
  	}
 
  }
-
-
+ //funcao do desenho de X.
 	function definirX($linha,$coluna){
 
 		if($linha == $coluna){
