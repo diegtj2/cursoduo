@@ -12,14 +12,12 @@ function somar($a,$b){
 
 
  	if($nota > 5){
- 		$nota = "aprovado";
- 	}elseif($nota === 5){
- 		$nota = "é exatamente a $nota";
+ 		$nota = "aprovado!";
  	}elseif($nota == 5){
- 		$nota = "é somente $nota";
- 	}else{
- 		$nota = "nenhuma das anteriores";
- 	}
+ 		$nota = "nota $nota, foi de raspão!";
+ 	}elseif($nota < 5){
+ 		$nota = "reprovado!";
+ 	} 		
  	return $nota;
 
  }
