@@ -66,9 +66,6 @@ foreach( $dadosPaciente as $key => $valor){
 	echo "<br>";
 }
 
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -120,8 +117,6 @@ for ($j=0; $j <= 10 ; $j++) { //laco da linha
 	}
 	echo "<br>";
 }
-
-
 ?>
 </body>
 </html>
