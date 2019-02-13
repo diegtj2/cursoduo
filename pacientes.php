@@ -13,7 +13,7 @@ require_once "funcoes.php";
 
 </head>
 <body>
-
+<br><br>
 <div class="container">
 	
 <table class="table table-striped table-bordered " id="pacientes">
@@ -46,4 +46,3 @@ require_once "funcoes.php";
 
 </body>
 </html>
-

@@ -12,15 +12,12 @@ function somar($a,$b){
 
 
  	if($nota > 5){
- 		$nota = "aprovado";
- 	}elseif($nota === 5){
- 		$nota = "é exatamente a $nota";
+ 		$nota = "aprovado!";
  	}elseif($nota == 5){
- 		$nota = "é somente $nota";
- 	}else{
- 		$nota = "nenhuma das anteriores";
- 	}
-
+ 		$nota = "nota $nota, foi de raspão!";
+ 	}elseif($nota < 5){
+ 		$nota = "reprovado!";
+ 	} 		
  	return $nota;
 
  }
@@ -50,8 +47,20 @@ function definirPrimo($numero){
  	}
 
  }
+ //funcao do desenho de X
+	function definirX($linha,$coluna){
 
+		if($linha == $coluna){
+			echo 'x';
+		}
+		else if($linha == 10 - $coluna){
+			echo 'x';
+		}
+		else{
+			echo '<span style="color:#808080">o</span>';
+		}
 
+<<<<<<< HEAD
 function definirX($linha,$coluna){
 
 	if($linha == $coluna){
@@ -62,7 +71,7 @@ function definirX($linha,$coluna){
 	}
 	else{
 		echo 0;
+=======
+>>>>>>> origin/master
 	}
-	
-}
 ?>
