@@ -1,6 +1,6 @@
 <?php
 require_once "funcoes.php";
-
+header('Content-type: text/html; charset=utf-8');
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,9 +19,9 @@ require_once "funcoes.php";
 <table class="table table-striped table-bordered " id="pacientes">
 	<tr>
 		<th>Nome</th>
-		<th>Cpf</th>
+		<th>CPF</th>
 		<th>Email</th>
-		<th>Acoes</th>
+		<th>Ações</th>
 	</tr>
 
 	<tr>

@@ -59,19 +59,5 @@ function definirPrimo($numero){
 		else{
 			echo '<span style="color:#808080">o</span>';
 		}
-
-<<<<<<< HEAD
-function definirX($linha,$coluna){
-
-	if($linha == $coluna){
-		echo 'x';
-	}
-	elseif($linha == (10 - $coluna)){
-		echo "x";
-	}
-	else{
-		echo 0;
-=======
->>>>>>> origin/master
 	}
 ?>
