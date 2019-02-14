@@ -69,9 +69,7 @@ function definirX($linha,$coluna){
 
 function conexao($host,$usuario,$senha,$banco){
 
-
 	mysql_connect($host,$usuario,$senha) or die("nao consegui conectar com o banco de dados");
-
 	mysql_select_db($banco) or die("banco de dados nao encontrado");
 
 }
@@ -88,7 +86,7 @@ function getAssoc($data){
 
 function listaPacientes(){
 
-	 $sql = "SELECT * FROM pacientes ";
+	 $sql = "SELECT * FROM paciente";
 
 	$data =  mysql_query($sql);
 
@@ -97,4 +95,24 @@ function listaPacientes(){
 	return $retorno;
 
 }
+
+function inserePacientes($nome, $cpf, $email){
+	$sql =  "INSERT INTO paciente (id, nome, cpf, email) VALUES (null, '$nome', '$cpf', '$email')";
+	mysql_query($sql);
+	return "paciente inserido!";
+}
+
+
+function editarPaciente($id, $nome, $cpf, $email){
+
+	$sql =  "UPDATE paciente SET nome = '$nome', cpf = '$cpf', email = '$email' WHERE id = $id";
+	mysql_query($sql);
+
+}
+
+function deletarPaciente($id){
+	$sql = "DELETE FROM paciente WHERE id = $id";
+	mysql_query($sql);
+}
+
 ?>
