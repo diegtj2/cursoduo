@@ -20,7 +20,7 @@ $pacientes = listaPacientes();
 <body>
 <br/><br/>
 <div class="container">
-	<a href="novo.php" class="btn btn-primary">Novo paciente</a>
+	<a href="novo.php" class="btn btn-primary">NOVO PACIENTE</a>
 	<br/><br/>
 	<table class="table table-striped table-bordered " id="pacientes">
 		<tr>

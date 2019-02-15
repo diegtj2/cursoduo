@@ -8,7 +8,7 @@ if($_GET){
 	$id = $_GET['id'];
 }
 
-echo "<h2>ID do paciente: ".$id."</h2>";
+
 
 if($_POST){
 	$id = $_POST['id'];
@@ -18,8 +18,7 @@ if($_POST){
 	deletarPaciente($id);
 	header("location:pacientes.php");
 }
-
-
+$pacientes = getPaciente($id);
 
 ?>
 
@@ -37,16 +36,22 @@ if($_POST){
 <body>
 	<br/><br/>
 	<div class="container">
-		<form action="deletarPaciente.php" method="post">
-			<div class="form-group">
-				<label>ID</label>
-				<input type="text" name="id" class="form-control" required="true" value="" placeholder="digite o id a ser deletado"/> 
-			</div>
-			<div class="form-group">
-				<button type="submit"  class="btn btn-success" >Deletar</button>
-			</div>
-			<a href="pacientes.php">voltar</a>
-		</form>
+		<?php foreach($pacientes as $valor): ?>
+			<form action="deletarPaciente.php" method="post">
+				<div class="form-group">
+					<label>ID</label>
+					<input type="text" name="id" class="form-control" readonly="" value="<?php echo $valor['id']?>" /> 
+				</div>
+				<div class="form-group">
+					<label>Nome</label>
+					<input type="text" name="nome" class="form-control" readonly="" value="<?php echo $valor['nome']?>" />
+				</div>
+				<div class="form-group">
+					<button type="submit"  class="btn btn-danger" >DELETAR</button>
+				</div>
+				<a href="pacientes.php">voltar</a>
+			</form>
+		<?php endforeach?>	
 	</div>
 </body>
 </html>

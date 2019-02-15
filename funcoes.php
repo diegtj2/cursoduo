@@ -94,4 +94,16 @@ function deletarPaciente($id){
 	$sql = "DELETE FROM paciente WHERE id = $id";
 	mysql_query($sql);
 }
+
+function getPaciente($id){
+
+	 $sql = "SELECT * FROM paciente WHERE id = '$id'";
+
+	$data =  mysql_query($sql);
+
+	$retorno = getAssoc($data);
+	
+	return $retorno;
+
+}
 ?>
