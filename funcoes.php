@@ -4,7 +4,7 @@ function somar($a,$b){
 	return $resultado;
 }
 
-function media($nota ){
+function media($nota){
  	if($nota > 5){
  		$nota = "aprovado!";
  	}elseif($nota == 5){

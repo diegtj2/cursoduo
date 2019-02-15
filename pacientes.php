@@ -36,7 +36,7 @@ $pacientes = listaPacientes();
 			<td><?php echo $valor['email']?></td>
 			<td>
 				<a href="editar.php?id=<?=$valor['id']?>">editar</a> | 
-				<a href="deletarPaciente.php?id=<?=$valor['id']?>">excluir</a>
+				<a href="deletar.php?id=<?=$valor['id']?>">excluir</a>
 			</td>
 		</tr>
 	<?php endforeach?>

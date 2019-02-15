@@ -13,8 +13,6 @@ if($_POST){
 	header("location:pacientes.php");
 }
 
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,12 +23,11 @@ if($_POST){
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-	<br/>
+	<br/><br/>
 	<div class="container">
 		<form action="novo.php" method="post">
 			<div class="form-group">
-				<label >CADASTRAR PACIENTE</label>
+				<h4>CADASTRAR PACIENTE</h4>
 				<br/>
 				<label>Nome</label>
 				<input type="text" name="nome" class="form-control" required="true" value="" placeholder="digite o nome do paciente" /> 
@@ -45,7 +42,7 @@ if($_POST){
 			</div>
 
 			<div class="form-group">
-				<button type="submit"  class="btn btn-success" >Enviar</button>
+				<button type="submit"  class="btn btn-success btn-sm" >ENVIAR</button>
 			</div>
 			<a href="pacientes.php">voltar</a>
 		</form>

@@ -26,7 +26,6 @@ $pacientes = getPaciente($id);
 <head>
 	<title>Editar pacientes</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
@@ -38,6 +37,8 @@ $pacientes = getPaciente($id);
 		<?php foreach($pacientes as $valor): ?>
 			<form action="editar.php" method="post">
 				<div class="form-group">
+					<h4>EDITAR PACIENTE</h4>
+					<br/>
 					<label>ID</label>
 					<input type="text" name="id" class="form-control" readonly="" value="<?php echo $valor['id']?>" /> 
 				</div>
@@ -53,9 +54,9 @@ $pacientes = getPaciente($id);
 					<label>Email</label>
 					<input type="text" name="email" class="form-control" required="true" value="<?php echo $valor['email']?>" /> 
 				</div>
-
+				<br/>
 				<div class="form-group">
-					<button type="submit"  class="btn btn-success" >EDITAR</button>
+					<button type="submit"  class="btn btn-success btn-sm" >EDITAR</button>
 				</div>
 				<a href="pacientes.php">voltar</a>
 			</form>
