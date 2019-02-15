@@ -1,13 +1,10 @@
 <?php
 require_once "funcoes.php";
-<<<<<<< HEAD
 include_once "configuracao.php";
 header('Content-type: text/html; charset=utf-8');
 ini_set("display_errors",1);
+
 $pacientes = listaPacientes();
-=======
-header('Content-type: text/html; charset=utf-8');
->>>>>>> b5e95e7fc385ce263ab8765fd68c0ca886f29f11
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +18,6 @@ header('Content-type: text/html; charset=utf-8');
 	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
 </head>
 <body>
-<<<<<<< HEAD
 <br/><br/>
 <div class="container">
 	<a href="novo.php" class="btn btn-primary">Novo paciente</a>
@@ -45,32 +41,6 @@ header('Content-type: text/html; charset=utf-8');
 		</tr>
 	<?php endforeach?>
 	</table>
-=======
-<br><br>
-<div class="container">
-	
-<table class="table table-striped table-bordered " id="pacientes">
-	<tr>
-		<th>Nome</th>
-		<th>CPF</th>
-		<th>Email</th>
-		<th>Ações</th>
-	</tr>
-
-	<tr>
-		<td>sdfsf</td>
-		<td>sdfsd</td>
-		<td>sdfsd</td>
-		<td>sdfsdf</td>
-
-	</tr>
-
-	
-</table>
-
->>>>>>> b5e95e7fc385ce263ab8765fd68c0ca886f29f11
-</div>
-
 <script type="text/javascript">
 	
 	$(document).ready(function() {
