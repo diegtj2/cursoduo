@@ -5,6 +5,11 @@ header('Content-type: text/html; charset=utf-8');
 ini_set("display_errors",1);
 
 $pacientes = listaPacientes();
+
+if(isset($_GET['id'])){
+        $id = $_GET['id'];
+        deletarPaciente($id);
+    }
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +41,7 @@ $pacientes = listaPacientes();
 			<td><?php echo $valor['email']?></td>
 			<td>
 				<a href="editar.php?id=<?=$valor['id']?>">editar</a> | 
-				<a href="deletar.php?id=<?=$valor['id']?>">excluir</a>
+				<a href="?id=<?=$valor['id']?>">excluir</a>
 			</td>
 		</tr>
 	<?php endforeach?>

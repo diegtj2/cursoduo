@@ -12,7 +12,6 @@ if($_POST){
 	inserePacientes($nome, $cpf, $email);
 	header("location:pacientes.php");
 }
-
 ?>
 <!DOCTYPE html>
 <html>

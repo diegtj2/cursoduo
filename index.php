@@ -73,7 +73,7 @@ foreach( $dadosPaciente as $key => $valor){
 <!DOCTYPE html>
 <html>
 <head>
-	<title>pagina inicial</title>
+	<title>Pagina inicial</title>
 	<meta />
 </head>
 <body>

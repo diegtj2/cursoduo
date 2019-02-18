@@ -93,6 +93,7 @@ function editarPaciente($id, $nome, $cpf, $email){
 function deletarPaciente($id){
 	$sql = "DELETE FROM paciente WHERE id = $id";
 	mysql_query($sql);
+	header("location:pacientes.php");
 }
 
 function getPaciente($id){
