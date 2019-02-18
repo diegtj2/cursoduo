@@ -22,12 +22,14 @@ include_once "configuracao.php";
 	<div class="container">
 		<div class="form-group">
 		<br/><br/><br/>
-			<form action="cadastroUser.php" method="post">
+			<form action="Login.php" method="post">
 				<label class="label label-default">Usuario:</label>
 				<input type="text" name="login" class="form-control"></input>
 				<br/><br/>
 				<label class="label label-default">Senha:</label>
 				<input type="password" name="senha" class="form-control"></input>
+				<br/><br/>
+				<button type="submit" name="cadastrar" class="btn btn-outline-primary">Cadastrar</button>
 			</form>
 		</div>
 	</div>	
